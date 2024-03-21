@@ -22,3 +22,6 @@ else:
     for files in excel_files:
         try:
             df_temp = pd.read_excel(files)
+            print("oi",df_temp)
+        except:
+            print("sem arquivo")    
