@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import glob
+import xlsxwriter
 
 # caminho para ler os arquivos
 folder_path = 'source\\raw_data\\'
@@ -52,21 +53,21 @@ else:
             # guarda dados tratados dentro de uma dataframe
             new_dataframe.append(df_temp)
 
-            print(new_dataframe)
+            print(new_dataframe[-1])
 
         except:
             print("sem arquivo")    
 
 if new_dataframe:
     result = pd.concat(new_dataframe, ignore_index=True)    
-    #caminho de saída
+                #caminho de saída
     output_file = os.path.join('source', 'ready', 'final.xlsx')
-    #configurou o motor de escrita
+                #configurou o motor de escrita
     writer = pd.ExcelWriter(output_file, engine='xlsxwriter')
-    # leva os dados do resultado a serem escritos no motor de excel configurado
+                # leva os dados do resultado a serem escritos no motor de excel configurado
     result.to_excel(writer, index=False)
-    #salva o arquivo de excel
-    writer._save()
+                #salva o arquivo de excel
+    writer.close()
 
 else:
-  print("nenhum dado encontrado")
+    print("nenhum dado encontrado")
