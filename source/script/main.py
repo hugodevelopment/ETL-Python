@@ -16,4 +16,9 @@ if not excel_files:
     print("Não arquivo não encontrado")
 else:
 # Aqui começamos o código, o dataframe irá receber nossas modificações e salva-lás
-    new_dataframe = []    
+    new_dataframe = []
+
+# Aqui ele percorre os arquivos em excel no array excel_files
+    for files in excel_files:
+        try:
+            df_temp = pd.read_excel(files)
