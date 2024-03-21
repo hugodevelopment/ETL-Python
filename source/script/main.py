@@ -51,13 +51,15 @@ else:
             print("sem arquivo")    
 
 if new_dataframe:
- result = pd.concat(new_dataframe, ignore_index=True)
-    
-#caminho de saída
-output_file = os.path.join('source', 'ready', 'final.xlsx')
-#configurou o motor de escrita
-writer = pd.ExcelWriter(output_file, engine='xlsxwriter')
-# leva os dados do resultado a serem escritos no motor de excel configurado
-result.to_excel(writer, index=False)
-#salva o arquivo de excel
-writer._save()
+    result = pd.concat(new_dataframe, ignore_index=True)    
+    #caminho de saída
+    output_file = os.path.join('source', 'ready', 'final.xlsx')
+    #configurou o motor de escrita
+    writer = pd.ExcelWriter(output_file, engine='xlsxwriter')
+    # leva os dados do resultado a serem escritos no motor de excel configurado
+    result.to_excel(writer, index=False)
+    #salva o arquivo de excel
+    writer._save()
+
+else:
+  print("nenhum dado encontrado")
