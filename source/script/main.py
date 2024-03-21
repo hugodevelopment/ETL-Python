@@ -28,7 +28,6 @@ else:
             file_name = os.path.basename(files)
             # print(file_name)
 
-
             if "brasil" in file_name.lower():
                 df_temp["location"] =  "br"
             elif "france" in file_name.lower():
@@ -38,9 +37,14 @@ else:
 
             # print(df_temp)    
 
-
             # criamos uma nova coluna chamada campaign
             df_temp['campaign'] = df_temp['utm_link'].str.extract(r'utm_campaign=(.*)')
+
+            # Limpar dados nulos
+            df_temp = df_temp.dropna()
+
+            # Excluir duplicatas
+            df_temp = df_temp.drop_duplicates()
 
             # guarda dados tratados dentro de uma dataframe
             new_dataframe.append(df_temp)
