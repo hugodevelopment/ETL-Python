@@ -21,7 +21,19 @@ else:
 # Aqui ele percorre os arquivos em excel no array excel_files
     for files in excel_files:
         try:
+            # lendo os aquivos
             df_temp = pd.read_excel(files)
-            print("oi",df_temp)
+            # print("oi",df_temp)
+            # pegando os nomes dos arquivos
+            file_name = os.path.basename(files)
+            print(file_name)
+
+            if "brasil" in file_name.lower():
+                df_temp["location"] =  "br"
+            elif "france" in file_name.lower():
+                df_temp["location"] =  "fr"
+            elif "italia" in file_name.lower():
+                df_temp["location"] in file_name.lower()
+
         except:
             print("sem arquivo")    
