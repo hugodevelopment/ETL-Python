@@ -46,6 +46,9 @@ else:
             # Excluir duplicatas
             df_temp = df_temp.drop_duplicates()
 
+            df_temp['data_assinatura'] = pd.to_datetime(df_temp['sale_date'])
+            df_temp['ano_assinatura'] = df_temp['sale_date'].dt.year
+
             # guarda dados tratados dentro de uma dataframe
             new_dataframe.append(df_temp)
 
