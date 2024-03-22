@@ -41,6 +41,8 @@ else:
             # criamos uma nova coluna chamada campaign
             df_temp['campaign'] = df_temp['utm_link'].str.extract(r'utm_campaign=(.*)')
 
+            del df_temp['utm_link']
+
             # Limpar dados nulos
             df_temp = df_temp.dropna()
 
