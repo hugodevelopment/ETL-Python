@@ -23,3 +23,11 @@ O dados com a base de dados da copa foram obtidos nesse githun e inspirados pelo
 <p align="center" width="100px" heigth="100px">
   <img src="https://github.com/hugodevelopment/ETL-Python/assets/62472486/bd58c4c2-3ba6-44dd-8116-b69814de849a"/>
 </p>	
+
+<b> 2º Após a criação do script podemos transformar todos os arquivos anteriores em apenas 1 arquivo excel com os dados tratados </b>
+
+<p align="center" width="100px" heigth="100px">
+  <img src="https://github.com/hugodevelopment/ETL-Python/assets/62472486/bd58c4c2-3ba6-44dd-8116-b69814de849a"/>
+</p>	
+
+
