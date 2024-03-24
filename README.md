@@ -11,7 +11,7 @@ O processo de ETL foi baseado em 3 etapas principais:
 O dados com a base de dados da copa foram obtidos nesse githun e inspirados pelo seguinte tutorial: https://github.com/goodluck08/pandas_project/blob/main/Project%20UberDrive.ipynb
 
 ## :wrench: Tecnologias utilizadas
-* Python, Pandas;
+* Python e Pandas;
 * Visual Studio Code; 	
 * Excel;
 * Power BI.
@@ -28,6 +28,13 @@ O dados com a base de dados da copa foram obtidos nesse githun e inspirados pelo
 
 <p align="center" width="100px" heigth="100px">
   <img src="https://github.com/hugodevelopment/ETL-Python/assets/62472486/f17d26f9-f21e-43ce-b293-499f3c3574d0"/>
+</p>
+
+<b> 3º Após a criação do arquivo final, podemos criar um dashboard com os dados. Neste caso fiz em Power BI </b>
+
+<p align="center" width="100px" heigth="100px">
+  <img src="![gif](https://github.com/hugodevelopment/ETL-Python/assets/62472486/69be2df8-1ba4-466c-bc02-bce9eba89309)"/>
 </p>	
 
+![gif](https://github.com/hugodevelopment/ETL-Python/assets/62472486/69be2df8-1ba4-466c-bc02-bce9eba89309)
 
