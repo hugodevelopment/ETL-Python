@@ -8,7 +8,7 @@ O processo de ETL foi baseado em 3 etapas principais:
 * 2º Manipulação dos arquivos por meio do script como automação, limpeza dos dados;
 * 3º Criação de um dashboard em Power BI com os dados tratados. </b>
 
-O dados com a base de dados da copa foram obtidos nesse githun e inspirados pelo seguinte tutorial: https://github.com/goodluck08/pandas_project/blob/main/Project%20UberDrive.ipynb
+O dados com a base de dados da copa foram obtidos nesse githun e inspirados pelo seguinte tutorial: https://github.com/digitalinnovationone/netflix-test-resolved
 
 ## :wrench: Tecnologias utilizadas
 * Python e Pandas;
